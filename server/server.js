@@ -11,7 +11,11 @@ app.use(cors())
 connectDB()
 
 app.use('/api/user', require('./routes/userRoute'))
-app.use('/api/image',require('./routes/imageRoute'))
+app.use('/api/image', require('./routes/imageRoute'))
+
+app.use('/', (req, res) => {
+    res.send('API Woking')
+})
 
 app.listen(PORT, () => {
     console.log('Server running on PORT : ' + PORT)
