@@ -7,7 +7,7 @@ import AppContextProvider from './context/AppContext'
 import axios from "axios"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-axios.defaults.baseURL = "http://localhost:4000"
+axios.defaults.baseURL = "https://image-generator-ai-full-stack.vercel.app";
 root.render(
   <BrowserRouter>
     <AppContextProvider>
